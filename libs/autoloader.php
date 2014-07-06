@@ -19,7 +19,14 @@ spl_autoload_register(function ($class) {
 
     // get the relative class name
     $relative_class = substr($class, $len);
-
+    // Mac Namespace
+    if(PHP_OS == 'Darwin') {
+        $file = $base_dir . 'Darwin/' . str_replace('\\', '/', $relative_class) . '.php';
+        if(file_exists($file)) {
+            require $file;
+            return;
+        }
+    }
     // replace the namespace prefix with the base directory, replace namespace
     // separators with directory separators in the relative class name, append
     // with .php
@@ -29,4 +36,5 @@ spl_autoload_register(function ($class) {
     if (file_exists($file)) {
         require $file;
     }
+
 });
