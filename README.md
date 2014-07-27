@@ -1,4 +1,10 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/afaqurk/linux-dash/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/afaqurk/linux-dash/?branch=master)
+
+# linux-dash ( FOR MAC OSX )
+
+I have cloned the original repo and extend it to Support MAC OSx.
+The repository will always in sync with the original one.
+
 # linux-dash (Beta)
 
 A low-overhead monitoring web dashboard for a GNU/Linux machine. Simply drop-in
